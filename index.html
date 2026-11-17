@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Թվային գիտելիքների հետախույզ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <h1>💻 Թվային գիտելիքների հետախույզ</h1>
+    <p>Ստուգի՛ր քո գիտելիքները և դարձի՛ր թվային աշխարհի հետախույզ։</p>
+</header>
+
+<main>
+    <section class="welcome">
+        <h2>Բարի գալուստ, փոքրիկ հետախույզ։</h2>
+        <p>
+            Կատարի՛ր առաջադրանքները, պատասխանի՛ր հարցերին
+            և հավաքի՛ր միավորներ։
+        </p>
+        <button onclick="startGame()">Սկսել խաղը 🚀</button>
+    </section>
+
+    <section id="game" class="hidden">
+
+        <div class="score-board">
+            <span>⭐ Միավորներ՝ <b id="score">0</b></span>
+            <span>Առաջադրանքներ՝ 20</span>
+        </div>
+
+        <h2>Առաջադրանք 1․ Համապատասխանեցրո՛ւ նկարը հասկացությանը</h2>
+
+        <p class="instruction">
+            Ուշադի՛ր դիտիր յուրաքանչյուր նկարը, կարդա՛ դրա տակ գրված
+            բացատրությունը և ընտրի՛ր համապատասխան հասկացությունը։
+        </p>
+
+        <div id="matching" class="matching-grid"></div>
+
+        <button onclick="checkMatching()">Ստուգել պատասխանները</button>
+        <p id="matchingResult" class="result"></p>
+
+        <hr>
+
+        <h2>Առաջադրանք 2․ Ընտրի՛ր ճիշտ պատասխանը</h2>
+        <p class="instruction">
+            Կարդա՛ հարցերը և ընտրի՛ր ճիշտ տարբերակը։
+        </p>
+
+        <div id="questions"></div>
+
+        <button onclick="checkQuiz()">Ավարտել խաղը 🏆</button>
+
+        <div id="finalResult" class="final-result"></div>
+
+        <button onclick="location.reload()" class="restart">
+            Կրկին խաղալ 🔄
+        </button>
+
+    </section>
+</main>
+
+<footer>
+    <p>📚 Թվային գրագիտություն և համակարգչային գիտություն | 5-րդ դասարան</p>
+</footer>
+
+</body>
+</html>
